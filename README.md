@@ -6,6 +6,8 @@
 
 [![Gmail Small][gmail-badge-small]][gmail-url]
 [![LinkedIn Small][linkedin-badge-small]][linkedin-url]
+[![Ask Me Anything][ama-badge]][ama-url]
+[![Say Thanks!][say-thanks-badge]][say-thanks-url]
 
 <!-- *********************************************************************** -->
 <!-- 0.3) PROJECT TITLE -->
