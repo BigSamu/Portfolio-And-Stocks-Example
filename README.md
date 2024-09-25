@@ -60,7 +60,7 @@ A portfolio and stocks example using yahoo finance API
 The following technologies are used for the implementation of this project:
 
 [![Python][python-badge]][python-url]
-[![Poetry][poetry-badge]][poetry-url]
+[![Pip][pip-badge]][pip-url]
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
