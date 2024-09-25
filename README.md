@@ -7,7 +7,6 @@
 [![License][license-badge]][license-url]
 [![Ask Me Anything][ama-badge]][ama-url]
 [![Say Thanks!][say-thanks-badge]][say-thanks-url]
-
 [![Gmail Small][gmail-badge-small]][gmail-url]
 [![LinkedIn Small][linkedin-badge-small]][linkedin-url]
 
