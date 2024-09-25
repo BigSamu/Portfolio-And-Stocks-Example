@@ -35,8 +35,6 @@
   - [Installation](#installation)
   - [Usage](#usage)
 - [Contact Me](#contact-me)
-- [Support](#support)
-- [License](#license)
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
@@ -161,7 +159,7 @@ Samuel Valdes Gutierrez
 <!-- *********************************************************************** -->
 <!-- VI) SUPPORT -->
 <!-- *********************************************************************** -->
-
+<!-- 
 ## Support
 
 Whether you use this work to learn something or if you just like my work, please 🙏 consider supporting it. This aid will help me to dedicate more time to create and developed well design open-source projects.
@@ -170,12 +168,13 @@ Whether you use this work to learn something or if you just like my work, please
 [![Ko-Fi][ko-fi-badge]][ko-fi-url]
 [![BuyMeACoffe][buy-me-a-coffee-badge]][buy-me-a-coffee-url]
 
-<p align="right">(<a href="#back-to-top">back to top</a>)</p>
+<p align="right">(<a href="#back-to-top">back to top</a>)</p> -->
 
 <!-- *********************************************************************** -->
 <!-- VII) LICENSE -->
 <!-- *********************************************************************** -->
 
+<!--
 ---
 
 ## License
@@ -186,7 +185,7 @@ This project is licensed under the terms of the MIT license.
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
----
+--- -->
 
 <!-- *********************************************************************** -->
 <!-- VIII) FOOTER -->
