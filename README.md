@@ -20,8 +20,6 @@
 # Portfolio And Stocks Example
 <!-- prettier-ignore-end -->
 
-A portfolio and stocks example using yahoo finance API
-
 <!-- *********************************************************************** -->
 <!-- 0.2) TABLE OF CONTENTS -->
 <!-- *********************************************************************** -->
@@ -50,6 +48,8 @@ A portfolio and stocks example using yahoo finance API
 <!-- *********************************************************************** -->
 
 ## About The Project
+
+A portfolio and stocks example using yahoo finance API
 
 ---
 
