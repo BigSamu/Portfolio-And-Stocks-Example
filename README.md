@@ -50,6 +50,8 @@
 
 A portfolio and stocks example using yahoo finance API
 
+<p align="right">(<a href="#back-to-top">back to top</a>)</p>
+
 ---
 
 <!-- *********************************************************************** -->
