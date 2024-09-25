@@ -4,9 +4,6 @@
 <!-- 0.1) INTRO SHIELDS -->
 <!-- *********************************************************************** -->
 
-[![License][license-badge]][license-url]
-[![Ask Me Anything][ama-badge]][ama-url]
-[![Say Thanks!][say-thanks-badge]][say-thanks-url]
 [![Gmail Small][gmail-badge-small]][gmail-url]
 [![LinkedIn Small][linkedin-badge-small]][linkedin-url]
 
@@ -159,7 +156,7 @@ Samuel Valdes Gutierrez
 <!-- *********************************************************************** -->
 <!-- VI) SUPPORT -->
 <!-- *********************************************************************** -->
-<!-- 
+<!--
 ## Support
 
 Whether you use this work to learn something or if you just like my work, please 🙏 consider supporting it. This aid will help me to dedicate more time to create and developed well design open-source projects.
