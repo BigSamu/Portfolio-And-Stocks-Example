@@ -4,17 +4,12 @@
 <!-- 0.1) INTRO SHIELDS -->
 <!-- *********************************************************************** -->
 
-[![Github Follow][github-follow-badge]][github-follow-url]
 [![License][license-badge]][license-url]
-[![Forks][forks-badge]][forks-url]
-[![Stars][stars-badge]][stars-url]
-[![Watchers][watchers-badge]][watchers-url]
 [![Ask Me Anything][ama-badge]][ama-url]
 [![Say Thanks!][say-thanks-badge]][say-thanks-url]
 
 [![Gmail Small][gmail-badge-small]][gmail-url]
 [![LinkedIn Small][linkedin-badge-small]][linkedin-url]
-[![Hackerrank Small][hackerrank-badge-small]][linkedin-url]
 
 <!-- *********************************************************************** -->
 <!-- 0.3) PROJECT TITLE -->
@@ -26,12 +21,6 @@
 <!-- prettier-ignore-end -->
 
 A portfolio and stocks example using yahoo finance API
-
-<p align="left">
-  <img src="public/demos/demo_video_1.gif" alt="demo_video_1" width="75%"/>
-  <img src="public/demos/demo_video_2.gif" alt="demo_video_2" width="75%"/>
-  <img src="public/demos/demo_video_3.gif" alt="demo_video_3" width="75%"/>
-</p
 
 <!-- *********************************************************************** -->
 <!-- 0.2) TABLE OF CONTENTS -->
