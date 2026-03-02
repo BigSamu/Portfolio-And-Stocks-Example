@@ -1,188 +1,200 @@
 <a name="back-to-top"></a>
 
-<!-- *********************************************************************** -->
-<!-- 0.1) INTRO SHIELDS -->
-<!-- *********************************************************************** -->
-
-[![Gmail Small][gmail-badge-small]][gmail-url]
-[![LinkedIn Small][linkedin-badge-small]][linkedin-url]
-[![Ask Me Anything][ama-badge]][ama-url]
-[![Say Thanks!][say-thanks-badge]][say-thanks-url]
-
-<!-- *********************************************************************** -->
-<!-- 0.3) PROJECT TITLE -->
-<!-- *********************************************************************** -->
-
-<!-- prettier-ignore-start -->
-<!-- omit in toc -->
 # Portfolio And Stocks Example
-<!-- prettier-ignore-end -->
 
-<!-- *********************************************************************** -->
-<!-- 0.2) TABLE OF CONTENTS -->
-<!-- *********************************************************************** -->
-
-<!-- prettier-ignore-start -->
-<!-- omit in toc -->
-## Table of Contents
-<!-- prettier-ignore-end -->
-
-- [About The Project](#about-the-project)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [Contact Me](#contact-me)
+A modular Python application that models a stock portfolio,
+fetches real-time market prices from Finnhub,
+and calculates rebalance actions based on a target allocation strategy.
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
 ---
 
-<!-- *********************************************************************** -->
-<!-- I) ABOUT THE PROJECT -->
-<!-- *********************************************************************** -->
+## Table of Contents
+
+- [Portfolio And Stocks Example](#portfolio-and-stocks-example)
+  - [Table of Contents](#table-of-contents)
+  - [About The Project](#about-the-project)
+    - [Demo API Key](#demo-api-key)
+  - [Architecture](#architecture)
+  - [Full Project Structure](#full-project-structure)
+  - [Technologies](#technologies)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+  - [Example Output](#example-output)
+  - [Contact](#contact)
+
+<p align="right">(<a href="#back-to-top">back to top</a>)</p>
+
+---
 
 ## About The Project
 
-A portfolio and stocks example using yahoo finance API
+This project demonstrates a simplified portfolio management system built using clean separation of concerns.
+
+It includes:
+
+- 📈 Real-time stock price retrieval (Finnhub API)
+- 📊 Portfolio market value calculation
+- 🎯 Target allocation validation
+- 🔁 Automatic rebalance calculation (BUY / SELL)
+- 💰 Fractional share support
+- 🧱 Domain / Service / Utility layer separation
+
+### Demo API Key
+
+This example application includes a pre-configured Finnhub API key for demonstration purposes.
+
+⚠️ The key is intended for example use only and is valid for approximately 10 days.  
+After expiration, you can generate your own free API key at:
+
+👉 https://finnhub.io/
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
 ---
 
-<!-- *********************************************************************** -->
-<!-- II) TECHNOLOGIES -->
-<!-- *********************************************************************** -->
+## Architecture
+
+The application follows a simple layered design:
+
+- **Domain Layer (`models/`)**  
+  Contains core business logic and financial calculations.
+
+- **Service Layer (`services/`)**  
+  Handles external API communication (Finnhub).
+
+- **Utility Layer (`utils/`)**  
+  Responsible for console rendering and formatting.
+
+- **Application Entry (`main.py`)**  
+  Acts as the composition root that wires everything together.
+
+<p align="right">(<a href="#back-to-top">back to top</a>)</p>
+
+---
+
+## Full Project Structure
+
+```
+Portfolio-And-Stocks-Example/
+│
+├── main.py
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+│
+├── models/
+│   ├── __init__.py
+│   ├── stock.py
+│   └── portfolio.py
+│
+├── services/
+│   ├── __init__.py
+│   └── price_service.py
+│
+└── utils/
+    └── portfolio_printer.py
+```
+
+<p align="right">(<a href="#back-to-top">back to top</a>)</p>
+
+---
 
 ## Technologies
 
-The following technologies are used for the implementation of this project:
-
-[![Python][python-badge]][python-url]
+- Python 3.9+
+- Finnhub API
+- Pipenv
+- python-dotenv
+- halo (CLI spinner)
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
 ---
-
-<!-- *********************************************************************** -->
-<!-- III) GETTING STARTED -->
-<!-- *********************************************************************** -->
 
 ## Getting Started
 
-<!-- ----------------------------------------------------------------------- -->
-<!-- 3.1) Prerequisites -->
-<!-- ----------------------------------------------------------------------- -->
-
 ### Prerequisites
 
-For the setup of this web application, the following prerequisites are required
+- Python 3.9 or greater
+- pipenv
 
-- `Python 3.9` or greater and `pip3`.
-
-<!-- 3.2) Installation -->
-<!-- ----------------------------------------------------------------------- -->
+---
 
 ### Installation
 
-To get a copy of this project and run it in your local environment, follow the steps listed below.
+1. Clone the repository
 
-1. Clone the repo
-   ```sh
-   git clone git@github.com:BigSamu/Portfolio-And-Stocks-Example.git
-   ```
-2. Go into the repository
-   ```sh
-   cd Portfolio-And-Stocks-Example
-   ```
-3. Install required pyhon packages and access virtual environment
+```sh
+git clone git@github.com:BigSamu/Portfolio-And-Stocks-Example.git
+```
 
-   ```sh
-   pipenv install
-   pipenv shell
-   ```
+2. Navigate into the project
 
-4. Run appplication.
-   ```sh
-   python main.py
-   ```
+```sh
+cd Portfolio-And-Stocks-Example
+```
 
-<p align="right">(<a href="#back-to-top">back to top</a>)</p>
+3. Install dependencies and activate virtual environment
 
-<!-- ----------------------------------------------------------------------- -->
-<!-- 3.3) Usage -->
-<!-- ----------------------------------------------------------------------- -->
+```sh
+pipenv install
+pipenv shell
+```
+
+---
 
 ### Usage
 
-After succesfull run you will see an output on the console. To get different results just
-change the example scrip adding different stocks and dates
+Run the application:
+
+```sh
+python main.py
+```
+
+You can modify the stock list and target allocation inside `main.py`
+to experiment with different portfolio scenarios.
+
+The system supports fractional shares if your broker allows them.
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
 ---
 
-<!-- *********************************************************************** -->
-<!-- V) ACKNOWNLEDGEMENTS -->
-<!-- *********************************************************************** -->
+## Example Output
 
-<!-- ## Acknowledgements
+```
+=== PORTFOLIO SNAPSHOT ===
 
-lipsum
+Total Value: $7,842.30
 
-<p align="right">(<a href="#back-to-top">back to top</a>)</p>
+Ticker   Qty     Price     Value        Alloc   Target
+------------------------------------------------------------
+AAPL     10      189.32    1,893.20     24.14   60.00
+META     5       492.11    2,460.55     31.39   40.00
 
---- -->
+=== REBALANCE PLAN ===
 
-<!-- *********************************************************************** -->
-<!-- V) CONTACT ME -->
-<!-- *********************************************************************** -->
+Ticker   Target $    Current $   Δ $         Action
+-----------------------------------------------------------------
+AAPL     4,705.38    1,893.20    2,812.18    BUY 14.8493
+META     3,136.92    2,460.55    676.37      BUY 1.3746
+```
 
-## Contact Me
+---
 
-Feel free to contact me if you have any doubt!
+## Contact
 
 Samuel Valdes Gutierrez
 
-[![Gmail][gmail-badge]][gmail-url]
-[![Twitter][twitter-badge]][twitter-url]
-[![LinkedIn][linkedin-badge]][linkedin-url]
+Feel free to reach out if you have any questions or suggestions.
 
 <p align="right">(<a href="#back-to-top">back to top</a>)</p>
 
 ---
-
-<!-- *********************************************************************** -->
-<!-- VI) SUPPORT -->
-<!-- *********************************************************************** -->
-<!--
-## Support
-
-Whether you use this work to learn something or if you just like my work, please 🙏 consider supporting it. This aid will help me to dedicate more time to create and developed well design open-source projects.
-
-[![Paypal][paypal-badge]][paypal-url]
-[![Ko-Fi][ko-fi-badge]][ko-fi-url]
-[![BuyMeACoffe][buy-me-a-coffee-badge]][buy-me-a-coffee-url]
-
-<p align="right">(<a href="#back-to-top">back to top</a>)</p> -->
-
-<!-- *********************************************************************** -->
-<!-- VII) LICENSE -->
-<!-- *********************************************************************** -->
-
-<!--
----
-
-## License
-
-This project is licensed under the terms of the MIT license.
-
-> You can check out the full license [here](./LICENSE.md)
-
-<p align="right">(<a href="#back-to-top">back to top</a>)</p>
-
---- -->
 
 <!-- *********************************************************************** -->
 <!-- VIII) FOOTER -->
